@@ -1,23 +1,43 @@
 [中文](./README_CN.md)
-# Elite Robots CS SDK (C#)
 
-This repository provides C# bindings for the Elite Robots CS SDK.
-By default, `dotnet build` and `dotnet run` will automatically fetch and build the native C wrapper `elite_cs_series_sdk_c` when it is missing.
+# Elite Robots C# SDK Examples
 
+This repository is a collection of C# sample projects for the Elite Robots CS SDK. It is mainly intended to help developers quickly verify robot connectivity in a Windows environment, understand the basic usage of each communication interface, and run typical robot-control workflows.
+
+This repository already includes the SDK binaries required to run the examples, located in [`libs`](./libs); shared scripts and RTSI recipe files are located in [`resource`](./resource).
+
+## Repository Contents
+
+- `ConnectRobotTest`: verifies whether the robot can actively connect back to the PC TCP server
+- `DashboardExample`: basic dashboard connection and control flow
+- `EliteDriverExample`: end-to-end `EliteDriver` API usage example
+- `PrimaryPortExample`: primary port connection, package reading, script sending, and exception callback
+- `RtsiExample`: RTSI connection, recipe setup, data streaming, and input writeback
+- `SerialExample`: tool RS485 communication example based on `EliteDriver`
+- `ServojExample`: `writeServoj` motion example based on RTSI feedback and external control
+- `SpeedlExample`: speed planning example
+- `TrajectoryExample`: trajectory point streaming example using `EliteDriver`
+- `libs`: local SDK binaries used by all examples
+- `resource`: shared scripts and RTSI recipe files
+- `doc/API`: SDK API reference in English and Chinese
 
 ## Requirements
-- ***CS Controller*** (robot controller software):
-  - for 2.13.x, version must be >= **2.13.4** (CS-Series)
-  - for 2.14.x, version must be >= **2.14.2**
-  - If your controller software is lower than the required version, upgrade is recommended.
+
 - .NET SDK 8.0+
-- `git`, `cmake`, and a C/C++ compiler
+- Network access to the target robot
+- Please keep the SDK runtime files in the `libs` directory
 
-## Build and Install
-For build/install steps, see: [Build Guide](./doc/BuildGuide/BuildGuide.en.md)
+Recommended controller versions:
 
-## User Guide
-For runtime usage, examples, FAQ, and external project integration, see: [User Guide](./doc/UserGuide/UserGuide.en.md)
+- 2.13.x: `>= 2.13.4`
+- 2.14.x: `>= 2.14.2`
 
 ## API Reference
-[API Reference](./doc/API/en/API.en.md)
+
+- English: [doc/API/en/API.en.md](./doc/API/en/API.en.md)
+- Chinese: [doc/API/cn/API.cn.md](./doc/API/cn/API.cn.md)
+
+## Changelog
+
+- English: [ChangeLog.md](./ChangeLog.md)
+- Chinese: [ChangeLog.cn.md](./ChangeLog.cn.md)

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RtsiExample": {
+      "commandName": "Project",
+      "commandLineArgs": "rtsi_client 172.16.100.10"
+    }
+  }
+}
