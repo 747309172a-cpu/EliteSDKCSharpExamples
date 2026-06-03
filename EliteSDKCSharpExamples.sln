@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedlExample", "SpeedlExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrajectoryExample", "TrajectoryExample\TrajectoryExample.csproj", "{E83871AA-1525-4F31-84A1-A1D56ED5A5F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinematicsExample", "KinematicsExample\KinematicsExample.csproj", "{5D99311F-B6D4-4DD3-BBC6-43C01D4FF5EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoseAlgebraExample", "PoseAlgebraExample\PoseAlgebraExample.csproj", "{75100F41-4037-42EE-874B-E315C148F7DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{E83871AA-1525-4F31-84A1-A1D56ED5A5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E83871AA-1525-4F31-84A1-A1D56ED5A5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E83871AA-1525-4F31-84A1-A1D56ED5A5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D99311F-B6D4-4DD3-BBC6-43C01D4FF5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D99311F-B6D4-4DD3-BBC6-43C01D4FF5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D99311F-B6D4-4DD3-BBC6-43C01D4FF5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D99311F-B6D4-4DD3-BBC6-43C01D4FF5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75100F41-4037-42EE-874B-E315C148F7DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75100F41-4037-42EE-874B-E315C148F7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75100F41-4037-42EE-874B-E315C148F7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75100F41-4037-42EE-874B-E315C148F7DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,12 +11,14 @@ This repository already includes the SDK binaries required to run the examples, 
 - `ConnectRobotTest`: verifies whether the robot can actively connect back to the PC TCP server
 - `DashboardExample`: basic dashboard connection and control flow
 - `EliteDriverExample`: end-to-end `EliteDriver` API usage example
+- `KinematicsExample`: FK/IK example using the kinematics plugin
+- `PoseAlgebraExample`: pose matrix/vector calculation example using the pose algebra plugin
 - `PrimaryPortExample`: primary port connection, package reading, script sending, and exception callback
 - `RtsiExample`: RTSI connection, recipe setup, data streaming, and input writeback
 - `SerialExample`: tool RS485 communication example based on `EliteDriver`
 - `ServojExample`: `writeServoj` motion example based on RTSI feedback and external control
 - `SpeedlExample`: speed planning example
-- `TrajectoryExample`: trajectory point streaming example using `EliteDriver`
+- `TrajectoryExample`: trajectory point streaming example using `EliteDriver`, including trajectory feedback and speed/time control modes
 - `libs`: local SDK binaries used by all examples
 - `resource`: shared scripts and RTSI recipe files
 - `doc/API`: SDK API reference in English and Chinese

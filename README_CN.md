@@ -11,12 +11,14 @@
 - `ConnectRobotTest`：验证机器人能否主动回连到 PC 端 TCP 服务
 - `DashboardExample`：演示 Dashboard 接口的基础连接与控制流程
 - `EliteDriverExample`：演示 `EliteDriver` 主要接口的完整调用流程
+- `KinematicsExample`：基于运动学插件的 FK/IK 示例
+- `PoseAlgebraExample`：基于姿态代数插件的位姿矩阵/向量计算示例
 - `PrimaryPortExample`：演示 Primary Port 连接、报文读取、脚本下发和异常回调
 - `RtsiExample`：演示 RTSI 连接、配方配置、数据收发与输入写入
 - `SerialExample`：基于 `EliteDriver` 的工具端 RS485 通信示例
 - `ServojExample`：结合 RTSI 反馈与外部控制脚本的 `writeServoj` 运动示例
 - `SpeedlExample`：速度规划示例
-- `TrajectoryExample`：基于 `EliteDriver` 的轨迹点下发示例
+- `TrajectoryExample`：基于 `EliteDriver` 的轨迹点下发示例，包含轨迹反馈和速度/时间控制模式
 - `libs`：各示例共用的本地 SDK 动态库
 - `resource`：各示例共用的脚本和 RTSI 配方文件
 - `doc/API`：中英文 API 文档

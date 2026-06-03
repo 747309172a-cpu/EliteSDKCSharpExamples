@@ -19,6 +19,11 @@
       <TargetPath>%(Filename)%(Extension)</TargetPath>
     </Content>
 
+    <Content Include="..\libs\*.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>%(Filename)%(Extension)</TargetPath>
+    </Content>
+
     <Content Include="..\libs\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>%(Filename)%(Extension)</TargetPath>
