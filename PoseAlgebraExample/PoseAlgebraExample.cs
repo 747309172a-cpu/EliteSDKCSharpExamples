@@ -2,7 +2,7 @@ using EliteRobots.CSharp;
 
 internal static class PoseAlgebraExample
 {
-    private const string DefaultPluginLibPath = @"C:\EliteSDK\plugins\pose_algebra\elite_eigen_pose_algebra.dll";
+    private static readonly string DefaultPluginLibPath = Path.Combine(AppContext.BaseDirectory, "elite_eigen_pose_algebra.dll");
     private const string DefaultPluginClassName = "ELITE::EigenPoseAlgebra";
 
     public static void Main(string[] args)

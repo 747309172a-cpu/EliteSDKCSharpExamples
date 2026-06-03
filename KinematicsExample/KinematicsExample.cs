@@ -3,7 +3,7 @@ using EliteRobots.CSharp;
 internal static class KinematicsExample
 {
     private const string DefaultRobotIp = "172.16.100.10";
-    private const string DefaultPluginLibPath = @"C:\EliteSDK\plugins\kinematics\elite_kdl_kinematics.dll";
+    private static readonly string DefaultPluginLibPath = Path.Combine(AppContext.BaseDirectory, "elite_kdl_kinematics.dll");
     private const string DefaultPluginClassName = "ELITE::KdlKinematicsPlugin";
 
     public static void Main(string[] args)
