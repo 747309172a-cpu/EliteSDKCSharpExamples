@@ -3,6 +3,7 @@ using EliteRobots.CSharp;
 internal static class KinematicsExample
 {
     private const string DefaultRobotIp = "172.16.100.10";
+    private const string DefaultPluginLibPath = @"C:\EliteSDK\plugins\kinematics\elite_kdl_kinematics.dll";
     private const string DefaultPluginClassName = "ELITE::KdlKinematicsPlugin";
 
     public static void Main(string[] args)
@@ -82,7 +83,7 @@ internal static class KinematicsExample
     private static bool TryParseArgs(string[] args, out string robotIp, out string pluginLibPath, out string pluginClassName)
     {
         robotIp = DefaultRobotIp;
-        pluginLibPath = string.Empty;
+        pluginLibPath = DefaultPluginLibPath;
         pluginClassName = DefaultPluginClassName;
 
         var index = 0;
@@ -106,7 +107,7 @@ internal static class KinematicsExample
             pluginClassName = args[index];
         }
 
-        return !string.IsNullOrWhiteSpace(pluginLibPath);
+        return true;
     }
 
     private static void PrintVector6(string name, double[] value)
@@ -118,5 +119,6 @@ internal static class KinematicsExample
     {
         Console.WriteLine("Usage:");
         Console.WriteLine("  dotnet run -- [robot-ip] <kinematics-plugin-lib> [plugin-class]");
+        Console.WriteLine("Or edit DefaultRobotIp and DefaultPluginLibPath in KinematicsExample.cs, then run from Visual Studio.");
     }
 }

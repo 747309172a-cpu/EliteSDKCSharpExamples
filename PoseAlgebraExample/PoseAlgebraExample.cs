@@ -2,6 +2,7 @@ using EliteRobots.CSharp;
 
 internal static class PoseAlgebraExample
 {
+    private const string DefaultPluginLibPath = @"C:\EliteSDK\plugins\pose_algebra\elite_eigen_pose_algebra.dll";
     private const string DefaultPluginClassName = "ELITE::EigenPoseAlgebra";
 
     public static void Main(string[] args)
@@ -125,7 +126,7 @@ internal static class PoseAlgebraExample
 
     private static bool TryParseArgs(string[] args, out string pluginLibPath, out string pluginClassName)
     {
-        pluginLibPath = string.Empty;
+        pluginLibPath = DefaultPluginLibPath;
         pluginClassName = DefaultPluginClassName;
 
         var index = 0;
@@ -146,7 +147,7 @@ internal static class PoseAlgebraExample
             pluginClassName = args[index];
         }
 
-        return !string.IsNullOrWhiteSpace(pluginLibPath);
+        return true;
     }
 
     private static bool CheckResult(string operation, bool ok, PoseAlgebraResult result)
@@ -179,5 +180,6 @@ internal static class PoseAlgebraExample
     {
         Console.WriteLine("Usage:");
         Console.WriteLine("  dotnet run -- <pose-algebra-plugin-lib> [plugin-class]");
+        Console.WriteLine("Or edit DefaultPluginLibPath in PoseAlgebraExample.cs, then run from Visual Studio.");
     }
 }
